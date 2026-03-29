@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,253 +14,282 @@
 <meta property="og:image:height" content="630">
 <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/luisramirop1994-ai/favicondespachoramiro/refs/heads/main/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/luisramirop1994-ai/favicondespachoramiro/refs/heads/main/favicon.png">
-  <link rel="icon" href="favicon.png" type="image/png">
-  <meta name="google-site-verification" content="ugVIRXXSe_X8eTOBGZo0pgxRLz_XkJ_PYeKI5TFE36A"/>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+<link rel="icon" href="favicon.png" type="image/png">
+<meta name="google-site-verification" content="ugVIRXXSe_X8eTOBGZo0pgxRLz_XkJ_PYeKI5TFE36A"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --burdeos: #5a0f14;
-  --negro: #0d0d0d;
-  --gris: rgba(255,255,255,0.08);
-  --texto: #eaeaea;
+--burdeos: #5a0f14;
+--negro: #0d0d0d;
+--gris: rgba(255,255,255,0.08);
+--texto: #eaeaea;
 }
 
 /* RESET */
 * {margin:0;padding:0;box-sizing:border-box;}
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--texto);
-  background: url("./preview.jpg") no-repeat center center fixed;
-  background-size: cover;
+font-family: 'Montserrat', sans-serif;
+color: var(--texto);
+background: url("./preview.jpg") no-repeat center center fixed;
+background-size: cover;
 }
 
 /* OVERLAY OSCURO */
 body::before {
-  content:"";
-  position:fixed;
-  inset:0;
-  background: rgba(0,0,0,0.65);
-  backdrop-filter: blur(3px);
-  z-index:-1;
+content:"";
+position:fixed;
+inset:0;
+background: rgba(0,0,0,0.65);
+backdrop-filter: blur(3px);
+z-index:-1;
 }
 
 /* HEADER */
 header {
-  text-align:center;
-  padding:3rem 1rem;
-  font-family: 'Playfair Display', serif;
-  letter-spacing:4px;
+text-align:center;
+padding:3rem 1rem;
+font-family: 'Playfair Display', serif;
+letter-spacing:4px;
 }
 
 header h1 {
-  font-size: clamp(2rem,4vw,3.5rem);
+font-size: clamp(2rem,4vw,3.5rem);
 }
 
 header span {
-  display:block;
-  font-size:1rem;
-  letter-spacing:6px;
-  margin-bottom:10px;
+display:block;
+font-size:1rem;
+letter-spacing:6px;
+margin-bottom:10px;
 }
 
 /* HERO */
 .hero {
-  text-align:center;
-  padding:2rem;
+text-align:center;
+padding:2rem;
 }
 
 .hero h2 {
-  font-size: clamp(1.5rem,3vw,2rem);
-  margin-bottom:1rem;
-  font-weight:300;
+font-size: clamp(1.5rem,3vw,2rem);
+margin-bottom:1rem;
+font-weight:300;
 }
 
 .hero button {
-  margin-top:1.5rem;
-  padding:1rem 2rem;
-  background: var(--burdeos);
-  border:none;
-  color:#fff;
-  border-radius:30px;
-  cursor:pointer;
-  transition:0.3s;
+margin-top:1.5rem;
+padding:1rem 2rem;
+background: var(--burdeos);
+border:none;
+color:#fff;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
 }
 
 .hero button:hover {
-  background:#7a1c22;
-  transform:scale(1.05);
+background:#7a1c22;
+transform:scale(1.05);
 }
 
 /* TARJETAS */
 .cards {
-  max-width:900px;
-  margin:2rem auto;
-  display:flex;
-  flex-direction:column;
-  gap:1.5rem;
-  padding:1rem;
+max-width:900px;
+margin:2rem auto;
+display:flex;
+flex-direction:column;
+gap:1.5rem;
+padding:1rem;
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  padding:2rem;
-  border-radius:15px;
-  transition:0.3s;
+background: rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter: blur(10px);
+padding:2rem;
+border-radius:15px;
+transition:0.3s;
 }
 
 .card:hover {
-  transform:translateY(-5px);
-  border-color: var(--burdeos);
+transform:translateY(-5px);
+border-color: var(--burdeos);
 }
 
 .card h3 {
-  margin-bottom:1rem;
-  font-family: 'Playfair Display', serif;
-  color:#fff;
+margin-bottom:1rem;
+font-family: 'Playfair Display', serif;
+color:#fff;
 }
 
 /* MENÚ */
 .menu-toggle {
-  position:fixed;
-  top:20px;
-  left:20px;
-  font-size:2rem;
-  background:var(--burdeos);
-  color:#fff;
-  border:none;
-  border-radius:10px;
-  padding:0.5rem 1rem;
-  cursor:pointer;
-  z-index:1000;
+position:fixed;
+top:20px;
+left:20px;
+font-size:2rem;
+background:var(--burdeos);
+color:#fff;
+border:none;
+border-radius:10px;
+padding:0.5rem 1rem;
+cursor:pointer;
+z-index:1000;
 }
 
 nav {
-  position:fixed;
-  top:0;
-  left:0;
-  width:260px;
-  height:100%;
-  background:#111;
-  transform:translateX(-100%);
-  transition:0.4s;
-  padding:2rem 1rem;
+position:fixed;
+top:0;
+left:0;
+width:260px;
+height:100%;
+background:#111;
+transform:translateX(-100%);
+transition:0.4s;
+padding:2rem 1rem;
 }
 
 nav.active { transform:translateX(0); }
 
 nav button {
-  width:100%;
-  margin:0.5rem 0;
-  padding:0.8rem;
-  background:var(--burdeos);
-  border:none;
-  color:#fff;
-  border-radius:10px;
-  cursor:pointer;
+width:100%;
+margin:0.5rem 0;
+padding:0.8rem;
+background:var(--burdeos);
+border:none;
+color:#fff;
+border-radius:10px;
+cursor:pointer;
 }
 
 /* MODAL */
 .modal {
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.8);
-  justify-content:center;
-  align-items:center;
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
 }
 
 .modal.show { display:flex; }
 
 .modal-content {
-  background:#111;
-  padding:2rem;
-  border-radius:15px;
-  max-width:600px;
-  width:90%;
+background:#111;
+padding:2rem;
+border-radius:15px;
+max-width:600px;
+width:90%;
 }
 
 /* FOOTER */
 footer {
-  text-align:center;
-  padding:2rem;
-  margin-top:3rem;
-  border-top:1px solid rgba(255,255,255,0.1);
+text-align:center;
+padding:2rem;
+margin-top:3rem;
+border-top:1px solid rgba(255,255,255,0.1);
 }
 
 /* BOTÓN WHATSAPP PRO */
 .whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  width: 60px;
-  height: 60px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius: 50%;
-  text-decoration: none;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-  z-index: 1000;
-  transition: all 0.3s ease;
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25D366;
+width: 60px;
+height: 60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius: 50%;
+text-decoration: none;
+box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+z-index: 1000;
+transition: all 0.3s ease;
 }
 
 .whatsapp-btn:hover {
-  transform: scale(1.1);
-  background: #1ebe5d;
+transform: scale(1.1);
+background: #1ebe5d;
 }
 
 /* animación suave */
 .whatsapp-btn::after {
-  content: "";
-  position:absolute;
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  background:#25D366;
-  opacity:0.4;
-  animation: pulse 2s infinite;
+content: "";
+position:absolute;
+width:100%;
+height:100%;
+border-radius:50%;
+background:#25D366;
+opacity:0.4;
+animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); opacity:0.4;}
-  70% { transform: scale(1.6); opacity:0;}
-  100% { opacity:0;}
+0% { transform: scale(1); opacity:0.4;}
+70% { transform: scale(1.6); opacity:0;}
+100% { opacity:0;}
 }
 /* COOKIE BANNER */
 .cookie-banner {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.95);
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-  z-index: 2000;
-  z-index: 9999; /
-  display: none; /
+position: fixed;
+bottom: 0;
+width: 100%;
+background: rgba(0,0,0,0.95);
+color: #fff;
+padding: 1rem;
+text-align: center;
+z-index: 2000;
+z-index: 9999; /
+display: none; /
 }
 
 .cookie-buttons {
-  margin-top:10px;
+margin-top:10px;
 }
 
 .cookie-buttons button {
-  margin:5px;
-  padding:0.6rem 1rem;
-  border:none;
-  border-radius:20px;
-  background:var(--burdeos);
-  color:#fff;
-  cursor:pointer;
+margin:5px;
+padding:0.6rem 1rem;
+border:none;
+border-radius:20px;
+background:var(--burdeos);
+color:#fff;
+cursor:pointer;
+}
+/* ================= MODAL MEJORADO ================= */
+.modal-content {
+  background: #111;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;      /* Tamaño medio */
+  width: 90%;
+  max-height: 70vh;       /* Altura máxima de la ventana */
+  overflow-y: auto;       /* Scroll vertical */
+  white-space: pre-wrap;  /* Respeta saltos de línea */
+  position: relative;     /* Para colocar la X */
+}
+
+/* Botón cerrar */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #eaeaea;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+.modal-close:hover {
+  color: var(--burdeos);
 }
 </style>
 </head>
@@ -269,74 +299,85 @@ footer {
 <button class="menu-toggle">☰</button>
 
 <nav id="menu">
-  <button data-title="Historia" data-text="Defendemos los derechos laborales.">Historia</button>
-  <button data-title="Despidos" data-text="Asesoramiento en despidos.">Despidos</button>
-  <button data-title="Contacto" data-text="Teléfono: 123 456 789">Contacto</button>
+<button data-title="Historia" data-text="<p><b><br>El DESPACHO ESPARTACO fue fundado con el objetivo de <u>defender los derechos de lxs trabajadorxs</u> ante las injusticias y visicitudes que ofrece el mercado laboral español. Da igual si eres becarix, temporal, indefinidx, falsx autónomo, o que trabaje en negro. Nadie que trabaje por cuenta ajena en el mercado laboral español está exento de abusos laborales.<br><b><p>
+
+   
+<p><b><br>El DESPACHO ESPARTACO <u>no recibe ningún tipo de subvención gubernamental</u>, ya sea central, autonómica o local. Tampoco está bajo los hilos de ninguna organización empresarial o sindical. No está afiliado a ningún partido político. Tampoco se conforma con el primer acuerdo que se le presenta. Es por ello que el único interés que tiene el DESPACHO ESPARTACO, es, en la medida de lo posible, <u>la defensa de los derechos de los trabajadores.</u><br><b></p>
+<br><b><p>
+Contacte con nosotros para más información.
+<br><b><p>
+
+<br><b><p>
+Te esperamos.
+<br><b><p>">Historia</button>
+<button data-title="Despidos" data-text="Asesoramiento en despidos.">Despidos</button>
+<button data-title="Contacto" data-text="Teléfono: 123 456 789">Contacto</button>
 </nav>
 
 <header>
-  <span>DESPACHO</span>
-  <h1>RAMIRO</h1>
-  <span>ABOGADOS</span>
+<span>DESPACHO</span>
+<h1>RAMIRO</h1>
+<span>ABOGADOS</span>
 </header>
 
 <section class="hero">
-  <h2>Defensa legal con firmeza y elegancia</h2>
-  <button data-title="Contacto" data-text="Reserva tu cita previa">Contactar</button>
+<h2>Defensa legal con firmeza y elegancia</h2>
+<button data-title="Contacto" data-text="Reserva tu cita previa">Contactar</button>
 </section>
 
 <section class="cards">
-  <div class="card">
-    <h3>Transparencia</h3>
-    <p>Honorarios claros desde el primer momento.</p>
-  </div>
-  <div class="card">
-    <h3>Compromiso</h3>
-    <p>No negociamos tu dignidad.</p>
-  </div>
-  <div class="card">
-    <h3>Especialización</h3>
-    <p>Expertos en derecho laboral.</p>
-  </div>
+<div class="card">
+<h3>Transparencia</h3>
+<p>Honorarios claros desde el primer momento.</p>
+</div>
+<div class="card">
+<h3>Compromiso</h3>
+<p>No negociamos tu dignidad.</p>
+</div>
+<div class="card">
+<h3>Especialización</h3>
+<p>Expertos en derecho laboral.</p>
+</div>
 </section>
 
 <div id="modal" class="modal">
   <div class="modal-content">
+    <button class="modal-close">&times;</button> <!-- Botón cerrar -->
     <h2 id="modal-title"></h2>
     <p id="modal-text"></p>
   </div>
 </div>
 <!-- COOKIE BANNER -->
 <div id="cookie-banner" class="cookie-banner">
-  <p>Utilizamos cookies para mejorar tu experiencia.</p>
-  <div class="cookie-buttons">
-    <button id="accept-cookies">Aceptar</button>
-    <button id="reject-cookies">Rechazar</button>
-    <button id="policy-cookies">Política de protección de datos</button>
-  </div>
+<p>Utilizamos cookies para mejorar tu experiencia.</p>
+<div class="cookie-buttons">
+<button id="accept-cookies">Aceptar</button>
+<button id="reject-cookies">Rechazar</button>
+<button id="policy-cookies">Política de protección de datos</button>
+</div>
 </div>
 
 <!-- MODAL POLÍTICA -->
 <div id="cookie-modal" class="modal">
-  <div class="modal-content">
-    <h2>Política de Protección de Datos</h2>
-    <p>Aquí debes incluir tu política RGPD.</p>
-  </div>
+<div class="modal-content">
+<h2>Política de Protección de Datos</h2>
+<p>Aquí debes incluir tu política RGPD.</p>
+</div>
 </div>
 
 <footer>
-  © 2025 Despacho Ramiro
+© 2025 Despacho Ramiro
 </footer>
 
 <!-- BOTÓN WHATSAPP FUNCIONAL -->
 <a href="https://api.whatsapp.com/send?phone=34600017133&text=Hola%20quiero%20información%20sobre%20sus%20servicios"
-   class="whatsapp-btn"
-   target="_blank"
-   rel="noopener noreferrer">
+class="whatsapp-btn"
+target="_blank"
+rel="noopener noreferrer">
 
-   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="white">
-     <path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.2 31.8l8-2.2c2.3 1.3 4.9 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.6c-2.5 0-4.9-.7-7-2l-.5-.3-4.7 1.3 1.3-4.6-.3-.5c-1.4-2.2-2.1-4.7-2.1-7.2C2.7 8.6 8.6 2.7 16 2.7S29.3 8.6 29.3 16 23.4 29 16 29zm7.2-9.7c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-.9 1.2-1.1 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.2-.4.3-.6.1-.2 0-.5 0-.6 0-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.2 1.6.2 2.2.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5z"/>
-   </svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="white">
+<path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.2 31.8l8-2.2c2.3 1.3 4.9 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.6c-2.5 0-4.9-.7-7-2l-.5-.3-4.7 1.3 1.3-4.6-.3-.5c-1.4-2.2-2.1-4.7-2.1-7.2C2.7 8.6 8.6 2.7 16 2.7S29.3 8.6 29.3 16 23.4 29 16 29zm7.2-9.7c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-.9 1.2-1.1 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.2-.4.3-.6.1-.2 0-.5 0-.6 0-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.2 1.6.2 2.2.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5z"/>
+</svg>
 </a>
 
 <script>
@@ -347,41 +388,49 @@ const modal = document.getElementById('modal');
 const modalTitle = document.getElementById('modal-title');
 const modalText = document.getElementById('modal-text');
 
-document.querySelectorAll('button').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    if(btn.dataset.title){
-      modalTitle.textContent = btn.dataset.title;
-      modalText.textContent = btn.dataset.text;
-      modal.classList.add('show');
-    }
+// Abrir modal al click en los botones
+document.querySelectorAll('button[data-title]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    modalTitle.textContent = btn.dataset.title;
+    modalText.textContent = btn.dataset.text || "Aquí va un texto largo...\nPuedes escribir varios párrafos con saltos de línea.\n\nMás contenido...";
+    modal.classList.add('show');
   });
 });
 
-modal.onclick = ()=> modal.classList.remove('show');
+// Cerrar modal al click en la X
+document.querySelector('.modal-close').onclick = () => {
+  modal.classList.remove('show');
+};
+
+// Cerrar modal al click fuera del contenido
+modal.onclick = (e) => {
+  if (e.target === modal) modal.classList.remove('show');
+};
 
 /* COOKIES */
 const banner = document.getElementById("cookie-banner");
 const cookieModal = document.getElementById("cookie-modal");
 
 if(!localStorage.getItem("cookiesChoice")){
-  banner.style.display="block";
+banner.style.display="block";
 }
 
 document.getElementById("accept-cookies").onclick=()=>{
-  localStorage.setItem("cookiesChoice","accepted");
-  banner.style.display="none";
+localStorage.setItem("cookiesChoice","accepted");
+banner.style.display="none";
 };
 
 document.getElementById("reject-cookies").onclick=()=>{
-  localStorage.setItem("cookiesChoice","rejected");
-  banner.style.display="none";
+localStorage.setItem("cookiesChoice","rejected");
+banner.style.display="none";
 };
 
 document.getElementById("policy-cookies").onclick=()=>{
-  cookieModal.classList.add("show");
+cookieModal.classList.add("show");
 };
 
 cookieModal.onclick=()=> cookieModal.classList.remove("show");
 </script>
 </body>
 </html>
+
