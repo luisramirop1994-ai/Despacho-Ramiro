@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -300,6 +301,61 @@ font-weight: bold;
 
 .modal-close:hover {
 color: var(--burdeos);
+}
+/* --- BOTÓN FLOTANTE DE LLAMADA --- */
+.call-btn-float {
+  position: fixed;
+  bottom: 90px; /* Se coloca justo encima del botón de WhatsApp */
+  right: 20px;
+  background: var(--burdeos);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  animation: pulse-phone 2s infinite;
+}
+
+.call-btn-float:hover {
+  transform: scale(1.1);
+  background: #7a1c22;
+}
+
+.call-btn-float svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+}
+
+/* Animación de "pulso" para que destaque */
+@keyframes pulse-phone {
+  0% { box-shadow: 0 0 0 0 rgba(90, 15, 20, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(90, 15, 20, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(90, 15, 20, 0); }
+}
+
+/* En ordenadores (pantallas grandes), lo hacemos rectangular con texto */
+@media (min-width: 768px) {
+  .call-btn-float {
+    width: auto;
+    padding: 0 20px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    gap: 8px;
+  }
+  .call-btn-float span { 
+    display: inline; 
+  }
+}
+.call-btn-float span { 
+  display: none; /* En móvil solo se ve el icono */
 }
 </style>
 </head>
@@ -877,6 +933,18 @@ Con carácter general las relaciones entre el prestador con los Usuarios de sus 
 <footer>
 © 2026 Despacho Ramiro
 </footer>
+<!-- BOTÓN FLOTANTE DE LLAMADA DIRECTA -->
+<a href="tel:+34641946610" class="call-btn-float" aria-label="Llamar ahora al Despacho Ramiro">
+  <!-- Este es el símbolo del teléfono en formato SVG (se ve nítido en cualquier móvil) -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.44-5.15-3.75-6.59-6.59l1.97-1.57c.26-.27.36-.66.25-1.01-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+  </svg>
+  <span>Llamar Ahora</span>
+</a>
+
+<!-- AQUÍ VA TU BOTÓN DE WHATSAPP QUE YA TENÍAS -->
+<a href="https://api.whatsapp.com/send?phone=34641946610&text=Hola%20quiero%20información%20sobre%20sus%20servicios" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+...
 
 <!-- BOTÓN WHATSAPP FUNCIONAL -->
 <a href="https://api.whatsapp.com/send?phone=34641946610&text=Hola%20quiero%20información%20sobre%20sus%20servicios"
